@@ -5,7 +5,6 @@ TEST_BUILD_COMMON_ARGS = "$(location run_test_build.py) --out $(out) " +
     "--bootclasspath $(location :art-run-test-bootclasspath) " +
     "--d8 $(location d8) " +
     "--jasmin $(location jasmin) " +
-    "--rewrapper $(location rewrapper) " +
     "--smali $(location android-smali) " +
     "--soong_zip $(location soong_zip) " +
     "--zipalign $(location zipalign) "
@@ -2668,7 +2667,6 @@ genrule_defaults {
         "android-smali",
         "d8",
         "jasmin",
-        "rewrapper",
         "soong_zip",
         "zipalign",
     ],
@@ -5788,7 +5786,6 @@ genrule_defaults {
         "android-smali",
         "d8",
         "jasmin",
-        "rewrapper",
         "soong_zip",
         "zipalign",
     ],
@@ -8908,7 +8905,6 @@ genrule_defaults {
         "android-smali",
         "d8",
         "jasmin",
-        "rewrapper",
         "soong_zip",
         "zipalign",
     ],
